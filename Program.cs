@@ -19,14 +19,15 @@ while (true)
     Console.WriteLine("7. Eliminar Libro");
     Console.WriteLine("8. Listar Libros");
     Console.WriteLine("9. Agregar Prestamo de Libro");
-    Console.WriteLine("10. Salir");
+    Console.WriteLine("10. Listar Prestamos");
+    Console.WriteLine("11. Salir");
 
     Console.Write("Ingrese una opción: ");
     try
     {
         int opcion = int.Parse(Console.ReadLine());
 
-        if (opcion == 10)
+        if (opcion == 11)
         {
             break;
         }
@@ -60,6 +61,9 @@ while (true)
             case 9:
                 AgregarPrestamo();
                 break;
+            case 10:
+                ListarPrestamos();
+                break;
             default:
                 Console.WriteLine("Opción no válida");
                 break;
@@ -68,6 +72,20 @@ while (true)
     catch (Exception ex)
     {
         Console.WriteLine("Error: " + ex.Message);
+    }
+}
+
+void ListarPrestamos()
+{
+    List<Prestamo> prestamos = prestamoService.ObtenerPrestamos();
+    if (prestamos.Count == 0)
+    {
+        Console.WriteLine("No hay prestamos registrados");
+        return;
+    }
+    foreach (Prestamo prestamo in prestamos)
+    {
+        Console.WriteLine(prestamo.ToString());
     }
 }
 
@@ -104,14 +122,14 @@ bool ListarUsuarios()
     if (usuarios.Count == 0)
     {
         Console.WriteLine("No hay usuarios registrados");
-        return true;
+        return false;
     }
 
     foreach (Usuario usuario in usuarios)
     {
         Console.WriteLine(usuario.ToString());
     }
-    return false;
+    return true;
 }
 
 void ModificarUsuario()
