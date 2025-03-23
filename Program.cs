@@ -25,6 +25,12 @@ while (true)
     try
     {
         int opcion = int.Parse(Console.ReadLine());
+
+        if (opcion == 10)
+        {
+            break;
+        }
+
         switch (opcion)
         {
             case 1:
@@ -43,7 +49,16 @@ while (true)
                 AgregarLibro();
                 break;
             case 6:
-                
+                ModificarLibro();
+                break;
+            case 7:
+                EliminarLibro();
+                break;
+            case 8:
+                ListarLibros();
+                break;
+            case 9:
+                AgregarPrestamo();
                 break;
             default:
                 Console.WriteLine("Opción no válida");
@@ -150,6 +165,21 @@ void ModificarUsuario()
 
 void EliminarUsuario()
 {
+    if (!ListarUsuarios())
+    {
+        return;
+    }
+    Console.Write("Ingrese el id del usuario a eliminar: ");
+    try
+    {
+        int idUsuario = int.Parse(Console.ReadLine());
+        usuarioService.EliminarUsuario(idUsuario);
+        Console.WriteLine("Usuario eliminado correctamente");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine("Error: " + ex.Message);
+    }
 }
 
 void AgregarLibro()
@@ -214,6 +244,21 @@ void ModificarLibro()
 
 void EliminarLibro()
 {
+    if (!ListarLibros())
+    {
+        return;
+    }
+    Console.Write("Ingrese el id del libro a eliminar: ");
+    try
+    {
+        int idLibro = int.Parse(Console.ReadLine());
+        libroService.EliminarLibro(idLibro);
+        Console.WriteLine("Libro eliminado correctamente");
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine("Error: " + ex.Message);
+    }
 }
 
 void AgregarPrestamo()

@@ -26,14 +26,14 @@ namespace GestionBiblioteca.Services
             return libros.FirstOrDefault(libro => libro.Id == id);
         }
 
-        public void EliminarLibro(Libro libro)
+        public void EliminarLibro(int id)
         {
-            Libro libroExistente = ObtenerLibroPorIsbm(libro.ISBN);
+            Libro libroExistente = ObtenerLibroPorId(id);
             if (libroExistente == null)
             {
                 throw new Exception("El libro no existe");
             }
-            libros.Remove(libro);
+            libros.Remove(libroExistente);
         }
 
         public List<Libro> ObtenerLibros()

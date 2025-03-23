@@ -2,3 +2,14 @@ C:\Users\Kevin\source\repos\GestionBiblioteca\obj\Debug\net8.0\GestionBiblioteca
 C:\Users\Kevin\source\repos\GestionBiblioteca\obj\Debug\net8.0\GestionBiblioteca.AssemblyInfoInputs.cache
 C:\Users\Kevin\source\repos\GestionBiblioteca\obj\Debug\net8.0\GestionBiblioteca.AssemblyInfo.cs
 C:\Users\Kevin\source\repos\GestionBiblioteca\obj\Debug\net8.0\GestionBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\source\repos\GestionBiblioteca\bin\Debug\net8.0\GestionBiblioteca.exe
+C:\Users\Kevin\source\repos\GestionBiblioteca\bin\Debug\net8.0\GestionBiblioteca.deps.json
+C:\Users\Kevin\source\repos\GestionBiblioteca\bin\Debug\net8.0\GestionBiblioteca.runtimeconfig.json
+C:\Users\Kevin\source\repos\GestionBiblioteca\bin\Debug\net8.0\GestionBiblioteca.dll
+C:\Users\Kevin\source\repos\GestionBiblioteca\bin\Debug\net8.0\GestionBiblioteca.pdb
+C:\Users\Kevin\source\repos\GestionBiblioteca\obj\Debug\net8.0\GestionBiblioteca.sourcelink.json
+C:\Users\Kevin\source\repos\GestionBiblioteca\obj\Debug\net8.0\GestionBiblioteca.dll
+C:\Users\Kevin\source\repos\GestionBiblioteca\obj\Debug\net8.0\refint\GestionBiblioteca.dll
+C:\Users\Kevin\source\repos\GestionBiblioteca\obj\Debug\net8.0\GestionBiblioteca.pdb
+C:\Users\Kevin\source\repos\GestionBiblioteca\obj\Debug\net8.0\GestionBiblioteca.genruntimeconfig.cache
+C:\Users\Kevin\source\repos\GestionBiblioteca\obj\Debug\net8.0\ref\GestionBiblioteca.dll
